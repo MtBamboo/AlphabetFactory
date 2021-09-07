@@ -1,1 +1,2 @@
-# RainbowFactory
+# AlphabetFactory
+# アルファベットをしこたま増やしまくるゲーム
