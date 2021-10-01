@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!--meta name="viewport" content="width=device-width, user-scalable=no" /-->
+    <!--meta name="apple-mobile-web-app-capable" content="yes" /-->
+    <title>&#x1f31e;ElementCreator</title>
+
+    <!-- StyleSheet -->
+    <link rel="StyleSheet" type="text/css" href="./css/ElementCreator.css">
+    <!-- JavaScript -->
+    <script type="text/javascript" src='./js/ElementCreator.js'></script>
+
+  </head>
+  <body id="body" onload="startApp()">
+    <div id="wrapPage">
+      <div id="title">&#x1f31e;ElementCreator</div>
+      <div class="frame" id="tabNavSpans">
+        <span class="tabNav" onclick="doTabChange(0)">Elements</span>
+        <span class="tabNav" onclick="doTabChange(1)">Fusion Reactor</span>
+        <span class="tabNav" onclick="doTabChange(2)">Fission Reactor</span>
+
+      </div>
+      <!-- Elemental -->
+      <div class="frame" id="tabElemental">
+        <!-- TODO:選んだ元素のステータス表示 -->
+        <table class="eleTable">
+          <tbody>
+            <tr id="period1" class="periodBox">
+              <td class="eleBox" ><span>1</span><span class="eleName">H</span><br><span class="eleHave">have:0</span><br><span class="eleCost">cost:0</span></td>
+              <td class="eleBox eleBoxEmpty" ><span>1</span><span class="eleName">H</span><br><span class="eleHave">have:0</span><br><span class="eleCost">cost:0</span></td>
+              <td class="eleBox" ><span>1</span><span class="eleName">H</span><br><span class="eleHave">have:0</span><br><span class="eleCost">cost:0</span></td>
+              <td class="eleBox" ><span>1</span><span class="eleName">H</span><br><span class="eleHave">have:0</span><br><span class="eleCost">cost:0</span></td>
+              <td class="eleBox" ><span>1</span><span class="eleName">H</span><br><span class="eleHave">have:0</span><br><span class="eleCost">cost:0</span></td>
+              <td class="eleBox" ><span>1</span><span class="eleName">H</span><br><span class="eleHave">have:0</span><br><span class="eleCost">cost:0</span></td>
+              <td class="eleBox" ><span>1</span><span class="eleName">H</span><br><span class="eleHave">have:0</span><br><span class="eleCost">cost:0</span></td>
+              <td class="eleBox" ><span>2</span><span class="eleName">He</span><br><span class="eleHave">have:0</span><br><span class="eleCost">cost:0</span></td>
+            </tr>
+            <tr id="period2" display="block">
+              <td class="eleBox">3Li<br>cost0</td>
+            </tr>
+            <tr id="period3" display="block">
+              <td class="eleBox">19K<br>cost0</td>
+            </tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Fusion Reactor -->
+      <div class="frame" id="tabFusionR">
+        核融合炉
+      </div>
+      <!-- Fission Reactor -->
+      <div class="frame" id="tabFissionR">
+        核分裂炉
+      </div>
+    </div>
+  </body>
+</html>
